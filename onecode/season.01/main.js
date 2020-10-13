@@ -14,10 +14,10 @@ const e04 = require('./e04')
 
     //e03:
 
-//nametxt = process.argv.slice(2).toString()
-//e03(nametxt)
+//nameSync = process.argv.slice(2).toString()
+//e03(nameSync)
 
     //e04
 
-nameTxtTwo = process.argv.slice(2).toString()
-e04(nameTxtTwo)
+nameAsync = process.argv.slice(2).toString()
+e04(nameAsync)

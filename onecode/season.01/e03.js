@@ -1,7 +1,11 @@
 module.exports = function(filename){
     var fs = require('fs');
-    fs.readFile(filename, 'utf8', function(err, data) {
-        if (err) throw err;
-        console.log(data);
-    });
+    let content;
+try {
+  content = fs.readFileSync(filename, { encoding: 'utf8' });
+} catch(err) {
+  // An error occurred
+  console.error(err);
+}
+    console.log(content)
 };
