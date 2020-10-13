@@ -4,7 +4,6 @@ module.exports = function(fileName){
 try {
 content = fs.readFileSync(fileName, { encoding: 'utf8' });
 } catch(err) {
-// An error occurred
 console.error(err);
 }
   console.log(content)

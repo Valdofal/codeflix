@@ -19,8 +19,8 @@ const e09 = require('./e09')
 
 //      e03:
 
-//nameSync = process.argv.slice(2).toString()
-//e03(nameSync)
+nameSync = process.argv.slice(2).toString()
+e03(nameSync)
 
 //      e04
 
