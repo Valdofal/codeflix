@@ -1,5 +1,5 @@
 module.exports = function(fileName){
-    var fs = require('fs');
+    const fs = require('fs');
     let content;
 try {
   content = fs.readFileSync(fileName, { encoding: 'utf8' });
