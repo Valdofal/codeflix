@@ -1,9 +1,10 @@
 const e01 = require('./e01')
-const e02 = require('./e02.js')
+const e02 = require('./e02')
 const e03 = require('./e03')
 const e04 = require('./e04')
 const e05 = require('./e05')
 const e06 = require('./e06')
+const e07 = require('./e07')
 
     //e01 :
 
@@ -32,5 +33,10 @@ const e06 = require('./e06')
 
     //e06
 
-fileNameTwo = process.argv.slice(2).toString()
-e06(fileNameTwo)
+//fileNameTwo = process.argv.slice(2).toString()
+//e06(fileNameTwo)
+
+    //e07
+
+fileNameThree = process.argv.slice(2).toString()
+e07(fileNameThree)
