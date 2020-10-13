@@ -1,8 +1,9 @@
-module.exports = function (fileName, permissionCode) {
-    console.log(permissionCode)
-    const fs = require ('fs')
-    fs.chmod('test1.txt', permissionCode, (err) => {
-        if (err) throw err;
-        console.log('The permissions for file "my_file.txt" have been changed!');
-      })
+module.exports = function (fileName) {
+  const fs = require('fs')
+  try {
+      fs.accessSync(fileName, fs.constants.R_OK | fs.constants.W_OK);
+      console.log(`I can read or write the file ${fileName}`);
+    } catch (err) {
+      console.error(`I don't have access to the file ${fileName}`);
+    }
 }

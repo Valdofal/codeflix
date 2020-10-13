@@ -29,9 +29,9 @@ const e09 = require('./e09')
 
 //      e05
 
-// fileName = process.argv.slice(2,3).toString()
-// fileContent = process.argv.slice(3,4).toString()
-// e05(fileName, fileContent) 
+//fileName = process.argv.slice(2,3).toString()
+//fileContent = process.argv.slice(3,4).toString()
+//e05(fileName, fileContent) 
 
 //      e06
 
@@ -42,14 +42,14 @@ const e09 = require('./e09')
 
 //fileNameThree = process.argv.slice(2).toString()
 //e07(fileNameThree)
-
+//
 //      e08
 
-fileNameFour = process.argv.slice(2).toString()
-e08(fileNameFour)
+//fileNameFour = process.argv.slice(2).toString()
+//e08(fileNameFour)
 
 //      e09
 
-// fileNameFive = process.argv[2].toString()
-// permissionCode = process.argv[3].toString()
-// e09(fileNameFive, permissionCode)
+//fileNameFive = process.argv[2].toString()
+//permissionCode = process.argv[3].toString()
+//e09(fileNameFive, permissionCode)// ch0pper.txt, 664 for rw-rw-r, 777 for rwxrwxrwx 

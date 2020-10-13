@@ -1,10 +1,9 @@
 module.exports = function (fileName) {
     const fs = require('fs')
-try {
-    fs.accessSync(fileName,fs.constants.F_OK | fs.constants.R_OK | fs.constants.W_OK) 
-    console.log(`${fileName} exists and it is reable and writable`);
-    } 
-    catch (error) {
-    console.error(error);
-}
+    try {
+        fs.accessSync(fileName, fs.constants.R_OK | fs.constants.W_OK);
+        console.log(`I can read or write the file ${fileName}`);
+      } catch (err) {
+        console.error(`I don't have access to the file ${fileName}`);
+      }
 }
