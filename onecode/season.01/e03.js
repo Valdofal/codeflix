@@ -1,8 +1,8 @@
-module.exports = function(filename){
+module.exports = function(fileName){
     var fs = require('fs');
     let content;
 try {
-  content = fs.readFileSync(filename, { encoding: 'utf8' });
+  content = fs.readFileSync(fileName, { encoding: 'utf8' });
 } catch(err) {
   // An error occurred
   console.error(err);

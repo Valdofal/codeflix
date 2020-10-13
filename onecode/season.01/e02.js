@@ -1,7 +1,7 @@
-module.exports = function (filename) {
+module.exports = function (fileName) {
 
     var path = require('path');
-    var ext = path.extname(filename);
+    var ext = path.extname(fileName);
     console.log(ext);
     
 }
