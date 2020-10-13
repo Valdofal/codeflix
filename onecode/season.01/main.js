@@ -19,5 +19,5 @@ const e04 = require('./e04')
 
     //e04
 
-nameAsync = process.argv.slice(2).toString()
-e04(nameAsync)
+//nameAsync = process.argv.slice(2).toString()
+//e04(nameAsync)
